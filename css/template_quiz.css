@@ -1,0 +1,104 @@
+body{
+    background-image: linear-gradient(to right,rgb(113, 11, 239),rgb(187, 36, 126));
+}
+.ques{
+    background-color: rgb(227, 227, 241);
+    border-radius:10px;
+    border:2px solid rgb(227, 227, 241);
+    margin-top: 5rem;
+    margin-left:16rem;
+    height:10rem;
+    width:48rem;
+}
+.circle1{
+    border-radius: 50%;
+    height: 12rem;
+    width:12rem;
+    margin-left: 1rem;
+    margin-top:-17px;
+    background-image: linear-gradient(to right,rgb(113, 11, 239),rgb(187, 36, 126));
+    border:2px solid rgb(227, 227, 241);
+}
+.cirq{
+    border-radius: 50%;
+    height: 11rem;
+    width:11rem;
+    margin-left:5px;
+    margin-top:5px;
+    background-color: rgb(227, 227, 241);
+    border:2px solid rgb(227, 227, 241);
+}
+.ab{
+    display: flex;
+}
+.op1{
+    background-color: rgb(227, 227, 241);
+    border-radius:10px;
+    border:2px solid rgb(227, 227, 241);
+    margin-top: 5rem;
+    margin-left:12rem;
+    height:4rem;
+    width:14rem;
+}
+.cir1{
+    border-radius: 50%;
+    height: 5rem;
+    width:5rem;
+    margin-left:5px;
+    margin-top:-10px;
+    background-image: linear-gradient(to right,rgb(113, 11, 239),rgb(187, 36, 126));
+    border:2px solid rgb(227, 227, 241);
+}
+.cir2{
+    border-radius: 50%;
+    height: 70px;
+    width:70px;
+    margin-left:3.5px;
+    margin-top:2px;
+    background-color: rgb(227, 227, 241);
+    border:2px solid rgb(227, 227, 241);
+}
+.op2{
+    background-color: rgb(227, 227, 241);
+    border-radius:10px;
+    border:2px solid rgb(227, 227, 241);
+    margin-top: 5rem;
+    margin-left:28rem;
+    height:4rem;
+    width:14rem;
+}
+.cd{
+    display: flex;
+}
+.op3{
+    background-color: rgb(227, 227, 241);
+    border-radius:10px;
+    border:2px solid rgb(227, 227, 241);
+    margin-top: 5rem;
+    margin-left:12rem;
+    height:4rem;
+    width:14rem;
+}
+.op4{
+    background-color: rgb(227, 227, 241);
+    border-radius:10px;
+    border:2px solid rgb(227, 227, 241);
+    margin-top:5rem;
+    margin-left:28rem;
+    height:4rem;
+    width:14rem;
+}
+
+.button1{
+      height: 3rem;
+      width:6rem;
+      font-size: larger;
+      margin-left: 60rem;
+      margin-top: 2rem;
+}
+.button2{
+    height: 3rem;
+    width:6rem;
+    margin-top:5px;
+    font-size: larger;
+}

@@ -1,0 +1,155 @@
+body{
+    background-color:rgb(16, 15, 15);
+    /* z-index: 2; */
+}
+nav{
+    height:6rem;
+    background-color:rgb(16, 15, 15);
+}
+.navbar{
+    padding-top:3rem;
+}
+.nav-item{
+    font-family: 'Barlow Semi Condensed';
+    font-weight: bold;
+    font-size: x-large;
+}
+.collapse{
+
+    padding-top: 1rem;
+    
+}
+
+ 
+.navbar-brand{
+    margin-left:2rem;
+    padding: 1rem 0 0 6rem;
+    font-family: 'Bakbak One', 'Times New Roman', Times, serif;
+    font-size: 4rem;
+    font-weight: bolder;
+    
+}
+
+.nav-item{
+    font-size:1.3rem ;
+    padding:0 1.5rem;
+}
+.boxwood{
+    height:25rem;
+    width:35rem;
+    
+    
+    border-radius: 10px;
+    overflow: hidden;
+    
+}
+
+#bolly{
+    margin: 7rem 0 0 6rem; 
+    background-image: linear-gradient(to right, rgb(244, 51, 51) , rgb(210 109 109));
+}
+#holly{
+    margin:7rem 0 0 18vw;
+    background-image: linear-gradient(to right, rgb(18 26 177) , rgb(251, 241, 241));
+}
+#h-series{
+    margin: 7rem 0 0 6rem; 
+    background-image:linear-gradient(to right, rgb(8 101 83) , rgb(188 209 167));
+}
+
+#e-series{
+    margin:7rem 0 0 18vw;
+    background-image: linear-gradient(to right, rgb(224, 23, 160) , rgb(153, 137, 212));
+}
+
+.type_head{
+   
+    position:relative;
+    font-size: 4rem;
+    font-family: 'Sofia';
+    color: aliceblue;
+    top:0rem;
+    left:2rem;
+    width:20rem;
+
+}
+
+.quiz_type-1{
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+.quiz_type-2{
+    display:flex;
+    /* flex-wrap:wrap-reverse; */
+    /* flex-direction: row-reverse; */
+}
+
+.type_image{
+    height:18rem;
+    width:22rem;
+    transform: rotate(30deg);
+    position: relative;
+     bottom:7rem;
+    left:18rem;
+    border-radius: 10px;
+}
+
+.btn{
+    margin:15rem 0 0 18rem;
+    width:12rem;
+    height:3rem;
+    border-radius:3rem;
+    /* background-image: linear-gradient(to bottom right, rgb(223 12 12), rgb(220 149 149)); */
+    
+    
+}
+#btn-bolly{
+    background-image: linear-gradient(to bottom right, rgb(223 12 12), rgb(226, 163, 163));
+}
+#btn-holly{
+    background-image: linear-gradient(to right, rgb(18 26 177) , rgb(251, 241, 241));
+}
+#btn-h-series{
+    background-image: linear-gradient(to bottom right, rgb(9, 91, 54), rgb(157, 226, 230));
+}
+#btn-e-series{
+    background-image: linear-gradient(to bottom right, rgb(173, 13, 149), rgb(79, 79, 231));
+}
+
+.templates{
+    margin:4rem 0 0 6rem;
+}
+
+.quiz_list{
+    font-size: 20px;
+    color: aliceblue;
+    text-align: center;
+    list-style: none;
+    
+    width:23rem;
+    height:3rem;
+    border-radius: 3px;
+    transform: skew(-14deg);
+    
+
+    /* background-image: linear-gradient(to bottom right, rgb(223 12 12), rgb(220 149 149)); */
+    box-shadow: 3px 4px 3px rgb(225, 197, 197) ;
+}
+
+.ql-1{
+    background-image: linear-gradient(to bottom right, rgb(223 12 12), rgb(220 149 149)); 
+    margin:2rem 5rem 2rem 5rem;
+    
+}
+.ql-2{
+    background-image: linear-gradient(to bottom right, rgb(18 26 177) , rgb(126, 143, 231));
+    margin:2rem 0rem 2rem 5rem;
+}
+.ql-3{
+    background-image: linear-gradient(to bottom right, rgb(16, 117, 68), rgba(168, 201, 176, 0.772));
+    margin:2rem 0rem 2rem 5rem;
+}
+.ql-4{
+    background-image: linear-gradient(to bottom right, rgb(223, 12, 153), rgb(73, 117, 227));
+    margin:2rem 0rem 2rem 5rem;
+}

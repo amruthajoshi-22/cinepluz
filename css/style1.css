@@ -1,0 +1,323 @@
+
+/* designing header */
+body{
+    margin:0;
+    padding:0;
+    overflow-x: hidden;
+    color: aliceblue;
+    background-color:rgb(16, 15, 15); 
+}
+
+header{
+    height:50rem;
+    width:100%;
+    background-color:rgb(16 15 15);
+
+}
+nav{
+    height:6rem;
+    background-color:rgb(16, 15, 15);
+}
+.navbar{
+    padding-top:3rem;
+    padding-bottom: 3rem;
+}
+.nav-item{
+    font-family: 'Barlow Semi Condensed';
+    font-weight: bold;
+    font-size: x-large;
+}
+.collapse{
+
+    padding-top: 1rem;
+    
+}
+
+ 
+.navbar-brand{
+    margin-left:2rem;
+    padding: 1rem 0 0 6rem;
+    font-family: 'Bakbak One', 'Times New Roman', Times, serif;
+    font-size: 4rem;
+    font-weight: bolder;
+    
+}
+
+.nav-item{
+    font-size:1.3rem ;
+    padding:0 1.5rem;
+}
+
+#head{
+    width:35vw;
+    font-size: 5rem;
+    margin-top:7rem;
+    margin-left:5rem;
+    font-family: 'Berkshire Swash','Dancing Script';
+}
+#headtext{
+    font-family: 'Barlow Semi Condensed';
+    font-size: 2rem;
+    margin:1rem 0 0 5.5rem;
+    width:25rem;
+    
+}
+
+#headimage{
+    margin-top:4.5rem;
+
+    height:33rem;
+    /* width:60vw; */
+    width:100%
+}
+/* *{
+    box-sizing: border-box;
+} */
+
+
+/* feature */
+.sidehead{
+    text-align:center;
+    font-family:cursive;
+    font-weight: bold;
+    font-size: 70px;
+    margin-top: 18px;
+    margin-bottom: 5rem;
+
+    color: white;
+}
+.boxes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    margin-left:5%;
+    margin-right: 5%;
+    margin-bottom:8rem;
+}
+.box{
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    text-align: center;
+    width:25rem;
+    height:400px;
+    transition: 0.3s;
+}
+.ficon{
+    
+    margin-top: 2rem;
+    margin-bottom:2rem ;
+    color:rgb(16, 28, 88);
+    font-size: 5rem;
+}
+.featureheading{
+    font-size: 40px;   
+    font-family:"sofia",sans-serif;
+    color: white;
+    font-style: italic;
+    font-weight: 900;
+}
+.text{
+    font-size:20px;
+    margin-top:20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+.box1{
+    background-color:rgb(181 72 53) ;
+}
+.box2{
+    background-color:rgb(74, 206, 125) ;
+}
+.box3{
+    background-color:rgb(116, 94, 214) ;
+}
+
+
+/* trending quizes */
+.popular_quiz{
+    
+     height:40rem;
+     width: 100%;
+     background-color: rgb(53 2 2);
+}
+.quiz_elements{
+    /* padding-top: 6rem; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    position: relative;
+}
+.trending{
+    height: 19rem;
+    width:15rem; 
+    
+    margin:0 2rem 0 2rem;
+    
+    background-repeat: no-repeat;
+    background-size:cover;
+    
+}
+/* .trending:hover{
+    
+    width:17rem; 
+    
+
+} */
+
+    
+    
+
+#friends{
+    background-image: url("../images/Friends.jpg");
+    
+
+}
+#office{
+    background-image: url("../images/office.jpg");
+    
+
+}
+#family_man{
+    background-image: url("../images/family man.jpg");
+    
+
+}
+#money{
+    background-image: url("../images/moneyheist.jpg");
+    
+
+}
+#avatar{
+    background-image: url("../images/avatar2.jpg");
+    
+
+}
+#Bahubali{
+    background-image: url("../images/bahubali.jpg");
+   
+
+}
+#tidiots{
+    background-image: url("../images/tidiots.jpg");
+    
+
+}
+#Big-bang{
+    background-image: url("../images/avatar2.jpg");
+    
+
+}
+
+
+
+.btn{
+    background-image: linear-gradient(to bottom right, rgb(28, 15, 15), rgb(250, 250, 237));
+    border-radius: 15px;
+    position: absolute;
+    top:8rem;
+    margin-left: 4rem;
+    
+}
+/* footer css */
+footer{
+    margin-top: 5em;
+    background-color: rgb(14, 14, 8);
+    padding:20px;
+}
+
+footer .pages{
+    text-align:center;
+    background-color: rgb(14, 15, 15);
+}
+
+footer .pages h3{
+    color:rgb(249, 246, 246);
+    font-size:20px;
+    font-family:Arial, Helvetica, sans-serif;
+    padding:5px;
+}
+
+footer .pages a{
+    text-decoration:none;
+    margin:1.5%;
+    color:#f8f2f2;
+    font-size:15px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+footer .pages a:hover{
+    color:rgb(90, 72, 72);
+}
+
+footer .doc{
+    text-align:center;
+    background-color: rgb(16, 16, 16);
+}
+
+footer .doc h3{
+    color:rgb(248, 248, 248);
+    font-size:10px;
+    font-family:Arial, Helvetica, sans-serif;
+    padding:3px;
+}
+
+footer .doc a{
+    text-decoration:none;
+    margin:1.5%;
+    color:#f2f9f6;
+    font-size:10px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+footer .doc a:hover{
+    color:rgb(184, 215, 104);
+}
+
+footer .social{
+    text-align:center;
+    background-color: rgb(14, 15, 15);
+}
+
+footer .social h3{
+    color:rgb(220, 213, 213);
+    font-size:1em;
+    font-family:Arial, Helvetica, sans-serif;
+    padding:3px;
+}
+
+footer .social a{
+    text-decoration: none;;
+    font-size: 15px;
+    color:rgb(220, 220, 234);
+    margin:2%;
+}
+
+footer .social a:hover{
+    color:white;
+}
+
+footer .contact{
+    text-align:center;
+    background-color: rgb(15, 15, 15);
+}
+
+footer .contact h3{
+    color:rgb(247, 236, 236);
+    font-size:1em;
+    font-family:Arial, Helvetica, sans-serif;
+    padding:3px;
+}
+
+footer .contact a{
+    text-decoration: none;;
+    font-size: 20px;
+    color:rgb(238, 238, 243);
+    margin:2%;
+}
+
+footer .contact a:hover{
+    color:rgb(237, 169, 169);
+}
+
+
+
