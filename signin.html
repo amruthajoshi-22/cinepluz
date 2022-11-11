@@ -18,7 +18,7 @@
                 <div class="form__input-error-message" id="usnerror"></div>
             </div>
             <div class="form__input-group">
-                <input type="email" class="form__input" id="mailid" autofocus placeholder="Email Address">
+                <input type="email" class="form__input" id="mailid" autofocus placeholder="Email Address" required>
                 <div class="form__input-error-message" id="emailerror"></div>
             </div>
             <div class="form__input-group">
@@ -29,9 +29,9 @@
                 <input type="password" class="form__input" id="cpassword" autofocus placeholder="Confirm password" required>
                 <div class="form__input-error-message" id="cperror"></div>
             </div>
-            <button class="form__button" type="submit" onclick="validateform()">Continue</button>
+            <button class="form__button" onclick="validateform()">Continue</button>
             <p class="form__text">
-                <a class="form__link" href="./" id="linkLogin">Already have an account? Sign in</a>
+                <a class="form__link" href="login.html" id="linkLogin">Already have an account? Sign in</a>
             </p>
         </form>
         </form>
@@ -48,12 +48,15 @@
             if(password.length<6){
                 
                  document.getElementById("perror").innerHTML="password must be atleast 6 characters";
-                return false;
+                // return false;
                 
             }
             else if(password!=cpassword){
                 document.getElementById("cperror").innerHTML="password must be same";
-                return false;
+                // return false;
+                
+            }
+            else{
                 
             }
             // else if()
