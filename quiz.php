@@ -1,3 +1,7 @@
+
+    <?php
+    
+    ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,14 +9,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/quiz.css">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Barlow+Semi+Condensed:wght@500&family=Ubuntu:wght@300;500;700&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Sofia&family=Ubuntu:wght@300;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-    
+    <link rel="stylesheet" href="css/quiz.css"> 
     <title>Quiz</title>
 </head>
 <body>
@@ -54,12 +58,10 @@
     
     
     <div class="templates" style="display:none;">
-       <li class="quiz_list ql-1" > Level-1</li>
-       <li class="quiz_list ql-1" >Level-2</li>
-       <li class="quiz_list ql-1">Level-3</li>
-       <li class="quiz_list ql-1">Level-4</li>
-       <li class="quiz_list ql-1" >Level-5</li>
-       <li class="quiz_list ql-1" >Level-6</li>
+       <li class="quiz_list ql-1" id="" > Level-1</li>
+       <li class="quiz_list ql-1" id="" >Level-2</li>
+       <li class="quiz_list ql-1" id="">Level-3</li>
+       
     </div>
   </div>
 
@@ -68,12 +70,10 @@
           <button type="button" class="btn btn-lg" id="btn-holly" onclick="template(this)">Click Here</button>
         </div>
         <div class="templates" style="display:none;">
-          <li class="quiz_list ql-2"> Level-1</li>
-          <li class="quiz_list ql-2">Level-2</li>
-          <li class="quiz_list ql-2">Level-3</li>
-          <li class="quiz_list ql-2">Level-4</li>
-          <li class="quiz_list ql-2">Level-5</li>
-          <li class="quiz_list ql-2">Level-6</li>
+          <li class="quiz_list ql-2" id=""> Level-1</li>
+          <li class="quiz_list ql-2" id="">Level-2</li>
+          <li class="quiz_list ql-2" id="">Level-3</li>
+          
        </div>
       <div class="boxwood" id="holly">
         <p class="type_head">Hollywood Movies</p>
@@ -97,12 +97,10 @@
     
     
     <div class="templates" style="display:none;">
-       <li class="quiz_list ql-3"> Level-1</li>
-       <li class="quiz_list ql-3">Level-2</li>
-       <li class="quiz_list ql-3">Level-3</li>
-       <li class="quiz_list ql-3">Level-4</li>
-       <li class="quiz_list ql-3">Level-5</li>
-       <li class="quiz_list ql-3">Level-6</li>
+       <li class="quiz_list ql-3" id="family-man"> Level-1</li>
+       <li class="quiz_list ql-3" id="Sacred Games">Level-2</li>
+       <li class="quiz_list ql-3" id="Mismatched">Level-3</li>
+      
     </div>
   </div>
 
@@ -111,19 +109,27 @@
           <button type="button" class="btn btn-lg" id="btn-e-series" onclick="template(this)">Click Here</button>
         </div>
         <div class="templates" style="display:none;">
-          <li class="quiz_list ql-4" id="money-heist"> Level-1</li>
-          <li class="quiz_list ql-4"  id="tvd">Level-2</li>
-          <li class="quiz_list ql-4" id="office">Level-3</li>
-          <li class="quiz_list ql-4"  id="stranger">Level-4</li>
-          <li class="quiz_list ql-4"  id="Big-bang">Level-5</li>
-          <li class="quiz_list ql-4"  id="Manifest">Level-6</li>
+          <li class="quiz_list ql-4" id="money-heist"> <a>Level-1</a></li>
+          
+          
+          <li class="quiz_list ql-4"  id="stranger"><a>Level-4</a></li>
+          <li class="quiz_list ql-4"  id="Friends"><a>Level-5</a></li>
+         
        </div>
       <div class="boxwood" id="e-series">
         <p class="type_head">English Series</p>
         <img class="type_image"  src="https://deasilex.com/wp-content/uploads/2021/03/Best-Web-Series-of-2021-on-Netflix-HBO-Amazon-Prime.jpg" alt="" srcset="">
       </div>
   </div>
-
-  <script src="intermediate.js"></script>
+   <?php>
+   $generei=genere;
+    $_SESSION["genere_var"]="$generei"; 
+   ?>
+  <script src="quizbutton.js"></script>
+   
+  
+  
+  
 </body>
+
 </html>

@@ -1,8 +1,8 @@
-/* body{
-    background-color: black;
+body{
+     background-color: black; 
      max-width: fit-content; 
     
-} */
+}
 .rules{
     height:80vh;
     width:80vw;
@@ -36,5 +36,3 @@
     
     
 }
-   
-    
