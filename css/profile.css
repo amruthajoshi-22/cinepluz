@@ -1,0 +1,52 @@
+body{
+    margin:0;
+    padding:0;
+    overflow-x: hidden;
+    color: aliceblue;
+    background-color:rgb(16, 15, 15); 
+}
+
+header{
+    height:50rem;
+    width:100%;
+    background-color:rgb(16 15 15);
+
+}
+nav{
+    height:6rem;
+    background-color:rgb(16, 15, 15);
+}
+.navbar{
+    padding-top:4rem;
+    padding-bottom: 3rem;
+}
+.nav-item{
+    font-family: 'Barlow Semi Condensed';
+    font-weight: bold;
+    font-size: x-large;
+}
+.nav-item:hover{
+    background-color: #201f1f;
+    border-radius: 7px;
+    
+}
+.collapse{
+
+    padding-top: 1rem;
+    
+}
+
+ 
+.navbar-brand{
+    margin-left:2rem;
+    padding: 1rem 0 0 6rem;
+    font-family: 'Bakbak One', 'Times New Roman', Times, serif;
+    font-size: 4rem;
+    font-weight: bolder;
+    
+}
+
+.nav-item{
+    font-size:1.3rem ;
+    padding:0 1.5rem;
+}

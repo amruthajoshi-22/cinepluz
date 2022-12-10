@@ -1,5 +1,8 @@
 
-
+<?php
+    session_start();
+    $_SESSION['quizcat']=$_GET["quizcat"];
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

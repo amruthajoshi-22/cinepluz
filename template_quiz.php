@@ -1,3 +1,22 @@
+ <?php
+ session_start();
+$quiz_categary=$_SESSION["quizcat"];
+echo "$quiz_categary";
+$catqns=$quiz_categary."_qns";
+$catans=$quiz_categary."_ans";
+require('database.php');
+// switch($quiz_categary)
+// {
+//     case 'friends': $cat_qns="friends_qns";
+//                   $cat_ans="friends_ans";
+//                   break;
+//     case 'strangerthings': $cat_qns="strangerthings_qns";
+//                          $cat_ans="strangerthings_ans";
+//                           break;
+//      default:exit;
+
+// }
+   ?>
 
 <!DOCTYPE html>
 <html>
@@ -11,22 +30,23 @@
 <body>
     <form action="results.php" method="POST">
 <?php
-$i=0;
- $con=mysqli_connect("localhost","root","");
- if(!$con)
- {
-     die("could not connect ".mysqli_connect_error());
- }
-
-mysqli_select_db($con,"cinepluz");
 
 
+//  $con=mysqli_connect("localhost","root","");
+//  if(!$con)
+//  {
+//      die("could not connect ".mysqli_connect_error());
+//  }
+
+// mysqli_select_db($con,"cinepluz");
 
 
-$q="select * from strangerthings_qns";
+
+for($i=1;$i<=10;$i++){
+$q="select * from $catqns where qid=$i";
 $query=mysqli_query($con,$q);
-while($rows=mysqli_fetch_array($query)){
-    $temp=$rows['ans_id']
+while($rows=mysqli_fetch_assoc($query)){
+     $temp=$rows['aid']
    
     
 ?>
@@ -41,13 +61,11 @@ while($rows=mysqli_fetch_array($query)){
     </div>
     <div class="mygrid">
     <?php
-    $qa="select * from strangerthings_ans where ans_id=$temp";
+
+    $qa="select * from $catans where ans_id=$temp";
    $queryans=mysqli_query($con,$qa);
-   $temp2=++$i;
-   ?>
    
-    <?php
-    while($rowsans=mysqli_fetch_array($queryans)){
+    while($rowsans=mysqli_fetch_assoc($queryans)){
         
       ?>
     
@@ -74,7 +92,7 @@ while($rows=mysqli_fetch_array($query)){
     
     <?php
 }
-
+}
 ?>
 
 
@@ -90,4 +108,3 @@ while($rows=mysqli_fetch_array($query)){
       </form>  
 </body>
 </html>
-

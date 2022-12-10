@@ -75,21 +75,25 @@ function template(ele){
     }
 };
 
- for(i=0;i<12;i++){
+function filmClick(e)
+{
+  document.cookie="category="+e;
+  window.location.href ="intermediate.php";
 
+}
+// for(i=0;i<12;i++){
+
+//   var temp=document.getElementsByClassName('quiz_list')[i];
   
-  // console.log(genereid);
-  var temp=document.getElementsByClassName('quiz_list')[i];
-   temp.addEventListener("click",function(){
-  var genere=temp.id;
-  alert(genere);
+//   temp.addEventListener("click",function(){
   
-  
-  
-     window.location.href ="intermediate.php";
+ 
+//  //document.cookie="category="+genere;
+
+//       window.location.href ="intermediate.php";
       
-  })};
-
+//    })};
+  
  
   
     

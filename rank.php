@@ -1,3 +1,19 @@
+<?php
+    // require('database.php');
+    $con=mysqli_connect("localhost","root","");
+ if(!$con)
+ {
+     die("could not connect ".mysqli_connect_error());
+ }
+ if(isset($_SESSION["email"]))
+ {
+    session_destroy();
+ }
+ 
+ session_start();
+ mysqli_select_db($con,"cinepluz");
+
+ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -28,25 +44,38 @@
                </li>
                
                <li class="nav-item">
-                <a class="nav-link active" href="quiz.html">Quizes</a>
+                <a class="nav-link active" href="quiz.php">Quizes</a>
                </li>
                <li class="nav-item">
-                <a class="nav-link active" href="rank.html">Ranklist</a>
+                <a class="nav-link active" href="rank.php">Ranklist</a>
                </li>
                <li class="nav-item">
                   <a class="nav-link active" href="aboutus.html">About</a>
                  </li>
                <li class="nav-item">
-                <a class="nav-link active" href="login.html">Signup</a>
+                <a class="nav-link active" href="login.php">Signup</a>
                </li>
             </ul>
         </div>
     </nav>
     <section>
-     <div class="rank-box">
-        
+
+    <?php $mail=$_SESSION['mail'];
+    ?>
      <p class="board">LEADERBOARD</p>
-         <div class="winners">
+     <div class="rank-box">
+     
+      <?php
+     $q="SELECT  uname,score from rank  ORDER BY score DESC";
+     $query=mysqli_query($con,$q);
+     $i=0;
+     while($rows=mysqli_fetch_array($query)){
+      $i++;
+      ?>
+     
+        
+     
+         <!-- <div class="winners">
             <div style="margin-top: 1rem; text-align: center;">
             
             <div id="secondround">
@@ -77,15 +106,18 @@
             <p class="prize3">PLAYER</p>
             <p class="prize3">300 POINTS</p>
         </div>
-         </div>
+         </div> -->
 
          <div class="otherplayer">
-            <p>#4</p>
+            <p><?php echo $i ?></p>
             <img class="otherimages" src="images/avatar.jpg" alt="" srcset="">
-            <p>PLAYER</p>
-            <p>200 POINTS</p>
+            <p><?php echo $rows['uname'] ?></p>
+            <p><?php echo $rows['score'] ?></p>
          </div>
-         <div class="otherplayer">
+         <?php 
+     }
+         ?>
+         <!-- <div class="otherplayer">
             <p>#5</p>
             <img class="otherimages" src="images/avatar.jpg" alt="" srcset="">
             <p>PLAYER</p>
@@ -120,15 +152,22 @@
             <img class="otherimages" src="images/avatar.jpg" alt="" srcset="">
             <p>PLAYER</p>
             <p>70 POINTS</p>
-         </div>
+         </div> -->
 
      </div>
+
+     
     </section>
-   <script>
+    <div>
+     <button class="first" type="button" class="btn btn-success">First</button>
+     <button class="second" type="button" class="btn btn-primary">Second</button>
+     <button class="third" type="button" class="btn btn-primary">Third</button>
+     </div>
+   <!-- <script>
       function prize_1(){
          
       }
    </script>
-    
+     -->
 </body>
 </html>

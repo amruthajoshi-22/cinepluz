@@ -1,7 +1,11 @@
 
-    <?php
-    
-    ?>
+     <?php
+      // session_start();
+  //     if(isset($_SESSION["quizcat"]))
+	// {
+	// 	session_destroy();
+	// }
+    ?> 
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -32,16 +36,16 @@
            </li>
            
            <li class="nav-item">
-            <a class="nav-link active" href="quiz.html">Quizes</a>
+            <a class="nav-link active" href="quiz.php">Quizes</a>
            </li>
            <li class="nav-item">
-            <a class="nav-link active" href="rank.html">Ranklist</a>
+            <a class="nav-link active" href="rank.php">Ranklist</a>
            </li>
            <li class="nav-item">
             <a class="nav-link active" href="aboutus.html">About</a>
            </li>
            <li class="nav-item">
-            <a class="nav-link active" href="login.html">Signup</a>
+            <a class="nav-link active" href="login.php">Signup</a>
            </li>
         </ul>
     </div>
@@ -109,11 +113,9 @@
           <button type="button" class="btn btn-lg" id="btn-e-series" onclick="template(this)">Click Here</button>
         </div>
         <div class="templates" style="display:none;">
-          <li class="quiz_list ql-4" id="money-heist"> <a>Level-1</a></li>
-          
-          
-          <li class="quiz_list ql-4"  id="stranger"><a>Level-4</a></li>
-          <li class="quiz_list ql-4"  id="Friends"><a>Level-5</a></li>
+          <li class="quiz_list ql-4"><a  id="moneyheist" href="intermediate.php?quizcat=moneyheist"> Money heist</a></li>
+          <li class="quiz_list ql-4" ><a  id="strangerthings" href="intermediate.php?quizcat=strangerthings">Stranger Things</a></li>
+          <li class="quiz_list ql-4" ><a  id="friends" href="intermediate.php?quizcat=friends">Level-5</a></li>
          
        </div>
       <div class="boxwood" id="e-series">
@@ -121,14 +123,16 @@
         <img class="type_image"  src="https://deasilex.com/wp-content/uploads/2021/03/Best-Web-Series-of-2021-on-Netflix-HBO-Amazon-Prime.jpg" alt="" srcset="">
       </div>
   </div>
-   <?php>
-   $generei=genere;
-    $_SESSION["genere_var"]="$generei"; 
-   ?>
   <script src="quizbutton.js"></script>
+
+   <?php
    
+  //  $cookie=$_COOKIE['category'];
+  //  echo "$cookie";
+  //  $_SESSION["quizcat"]=$cookie;
+?>
   
-  
+   
   
 </body>
 

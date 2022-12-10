@@ -162,3 +162,19 @@ nav{
     width:3rem;
     border-radius: 50%;
 }
+
+.first{
+    position:relative;
+    bottom:75rem;
+    left:10rem;
+}
+.second{
+    position:relative;
+    bottom:70rem;
+    left:6rem;
+}
+.third{
+    position:relative;
+    bottom:65rem;
+    left:4rem;
+}
