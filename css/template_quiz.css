@@ -6,7 +6,7 @@ body{
     background-color: rgb(227, 227, 241);
     border-radius:10px;
     border:2px solid rgb(227, 227, 241);
-    /* margin-top: 5rem; */
+     margin-top: 3rem; 
     /* margin-left:16rem; */
     height:7rem;
     width:52rem;
@@ -48,8 +48,8 @@ body{
      /* margin-right:3rem;
      margin-top:2rem;
      margin-bottom:2rem; */
-    height:4rem;
-    width:14rem;
+    height:5rem;
+    width:18rem;
 }
 .options{
     margin-top:8px;
@@ -91,36 +91,6 @@ body{
     margin: auto;
     
 }
-/* .op2{
-    background-color: rgb(227, 227, 241);
-    border-radius:10px;
-    border:2px solid rgb(227, 227, 241);
-    margin-top: 5rem;
-    margin-left:28rem;
-    height:4rem;
-    width:14rem;
-}
-.cd{
-    display: flex;
-}
-.op3{
-    background-color: rgb(227, 227, 241);
-    border-radius:10px;
-    border:2px solid rgb(227, 227, 241);
-    margin-top: 5rem;
-    margin-left:12rem;
-    height:4rem;
-    width:14rem;
-}
-.op4{
-    background-color: rgb(227, 227, 241);
-    border-radius:10px;
-    border:2px solid rgb(227, 227, 241);
-    margin-top:5rem;
-    margin-left:28rem;
-    height:4rem;
-    width:14rem;
-} */
 
 .button1{
       height: 3rem;

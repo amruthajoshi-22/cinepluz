@@ -37,7 +37,8 @@ else{
     $query1="INSERT INTO userdetails (`name`, `email`, `password`) VALUES ('$uname', '$mail', '$pword');" ;
     if(mysqli_query($con,$query1));
      ?>
-        <script>alert("successfully Registered!!")</script>
+        echo ("successfully Registered!!")
+        <script> window.location.href="login.php"</script>
          <?php
          
 

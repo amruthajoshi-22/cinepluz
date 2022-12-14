@@ -21,7 +21,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    
     <link rel="stylesheet" href="css/rank.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -50,16 +49,14 @@
                 <a class="nav-link active" href="rank.php">Ranklist</a>
                </li>
                <li class="nav-item">
-                  <a class="nav-link active" href="aboutus.html">About</a>
+                  <a class="nav-link active" href="aboutus.html">AboutUs</a>
                  </li>
                <li class="nav-item">
-                <a class="nav-link active" href="login.php">Signup</a>
+                <a class="nav-link active" href="profile.php">Profile</a>
                </li>
             </ul>
         </div>
     </nav>
-    <section>
-
     <?php $mail=$_SESSION['mail'];
     ?>
      <p class="board">LEADERBOARD</p>
@@ -73,41 +70,6 @@
       $i++;
       ?>
      
-        
-     
-         <!-- <div class="winners">
-            <div style="margin-top: 1rem; text-align: center;">
-            
-            <div id="secondround">
-               <p class="prize2">#2</p>
-            <img id="second" src="images/avatar.jpg" alt="" srcset="">
-            <button class="btn award" style="display:block; margin:1rem 0 0 4rem">Claim Reward</button>
-         </div>
-            <p class="prize2">PLAYER</p>
-            <p class="prize2">500 POINTS</p>
-            
-
-            </div>
-            <div style="text-align: center;">
-               <div id="firstround">
-            <p class="prize1">#1</p>
-            <img id="first" src="images/avatar.jpg" alt="" srcset="">
-            <button class="btn award" onclick="prize_1()" style="display:block; margin:1rem 0 0 5.8rem">Claim Reward</button>
-         </div>
-            <p class="prize1">PLAYER</p>
-            <p class="prize1">400 POINTS</p>
-            </div>
-            <div style="margin-top:2rem; text-align: center;">
-               <div id="thirdround">
-            <p class="prize3">#3</p>
-            <img id="third" src="images/avatar.jpg" alt="" srcset="">
-            <button class="btn award" style="display:block; margin:0.5rem 0 0 2.2rem">Claim Reward</button>
-         </div>
-            <p class="prize3">PLAYER</p>
-            <p class="prize3">300 POINTS</p>
-        </div>
-         </div> -->
-
          <div class="otherplayer">
             <p><?php echo $i ?></p>
             <img class="otherimages" src="images/avatar.jpg" alt="" srcset="">
@@ -117,57 +79,14 @@
          <?php 
      }
          ?>
-         <!-- <div class="otherplayer">
-            <p>#5</p>
-            <img class="otherimages" src="images/avatar.jpg" alt="" srcset="">
-            <p>PLAYER</p>
-            <p>150 POINTS</p>
-         </div>
-         <div class="otherplayer">
-            <p>#6</p>
-            <img class="otherimages" src="images/avatar.jpg" alt="" srcset="">
-            <p>PLAYER</p>
-            <p>120 POINTS</p>
-         </div>
-         <div class="otherplayer">
-            <p>#7</p>
-            <img class="otherimages" src="images/avatar.jpg" alt="" srcset="">
-            <p>PLAYER</p>
-            <p>100 POINTS</p>
-         </div>
-         <div class="otherplayer">
-            <p>#8</p>
-            <img class="otherimages" src="images/avatar.jpg" alt="" srcset="">
-            <p>PLAYER</p>
-            <p>80 POINTS</p>
-         </div>
-         <div class="otherplayer">
-            <p>#9</p>
-            <img class="otherimages" src="images/avatar.jpg" alt="" srcset="">
-            <p>PLAYER</p>
-            <p>75 POINTS</p>
-         </div>
-         <div class="otherplayer">
-            <p>#10</p>
-            <img class="otherimages" src="images/avatar.jpg" alt="" srcset="">
-            <p>PLAYER</p>
-            <p>70 POINTS</p>
-         </div> -->
-
-     </div>
-
-     
-    </section>
+          </div>
     <div>
-     <button class="first" type="button" class="btn btn-success">First</button>
-     <button class="second" type="button" class="btn btn-primary">Second</button>
-     <button class="third" type="button" class="btn btn-primary">Third</button>
+   <img src="images/firstprize.jpg" class="first" alt="" srcset="">
+   <img src="images/firstprize.jpg" class="second" alt="" srcset="">
+   <img src="images/firstprize.jpg" class="third" alt="" srcset="">
+     
      </div>
-   <!-- <script>
-      function prize_1(){
-         
-      }
-   </script>
-     -->
+   
+     
 </body>
 </html>

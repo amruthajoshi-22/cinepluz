@@ -1,21 +1,10 @@
  <?php
  session_start();
 $quiz_categary=$_SESSION["quizcat"];
-echo "$quiz_categary";
+
 $catqns=$quiz_categary."_qns";
 $catans=$quiz_categary."_ans";
 require('database.php');
-// switch($quiz_categary)
-// {
-//     case 'friends': $cat_qns="friends_qns";
-//                   $cat_ans="friends_ans";
-//                   break;
-//     case 'strangerthings': $cat_qns="strangerthings_qns";
-//                          $cat_ans="strangerthings_ans";
-//                           break;
-//      default:exit;
-
-// }
    ?>
 
 <!DOCTYPE html>
@@ -32,19 +21,12 @@ require('database.php');
 <?php
 
 
-//  $con=mysqli_connect("localhost","root","");
-//  if(!$con)
-//  {
-//      die("could not connect ".mysqli_connect_error());
-//  }
-
-// mysqli_select_db($con,"cinepluz");
-
 
 
 for($i=1;$i<=10;$i++){
 $q="select * from $catqns where qid=$i";
 $query=mysqli_query($con,$q);
+$k=1;
 while($rows=mysqli_fetch_assoc($query)){
      $temp=$rows['aid']
    
@@ -61,17 +43,17 @@ while($rows=mysqli_fetch_assoc($query)){
     </div>
     <div class="mygrid">
     <?php
-
+      $k=1;
     $qa="select * from $catans where ans_id=$temp";
    $queryans=mysqli_query($con,$qa);
    
     while($rowsans=mysqli_fetch_assoc($queryans)){
-        
-      ?>
-    
+      
+        ?>
+      
     <div class="op1">
       <div class="cir1">
-        <div class="cir2"><h1 style="margin-left:20px;margin-top:14px;">A</h1>
+        <div class="cir2"><h1 style="margin-left:20px;margin-top:14px;"><?php echo $k++ ?></h1>
     </div>
     </div>
         <div class="options">
@@ -79,25 +61,16 @@ while($rows=mysqli_fetch_assoc($query)){
    
       
     <?php echo $rowsans['answer']; ?>
-    </div>
-      
-    </div>
-    
+    </div></div>
     <?php
     }
     ?>
-    </div>
-     
-    </div>
-    
+    </div></div>
     <?php
 }
 }
 ?>
-
-
-    
-    <div class="button">
+  <div class="button">
         <input class="button1" name="quizsubmit" type="submit" value="SUBMIT">
     
       </div>

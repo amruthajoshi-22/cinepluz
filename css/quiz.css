@@ -117,7 +117,7 @@ nav{
 }
 
 .templates{
-    margin:4rem 0 0 6rem;
+    margin:12rem 0 0 6rem;
 }
 
 .quiz_list{
@@ -152,4 +152,10 @@ nav{
 .ql-4{
     background-image: linear-gradient(to bottom right, rgb(223, 12, 153), rgb(73, 117, 227));
     margin:2rem 0rem 2rem 5rem;
+}
+
+.templates li a{
+    text-decoration: none;
+    color: rgb(241, 241, 226);
+    font-size: 30px;
 }

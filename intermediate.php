@@ -2,6 +2,7 @@
 <?php
     session_start();
     $_SESSION['quizcat']=$_GET["quizcat"];
+    $set=$_GET["quizcat"];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -19,7 +20,7 @@
 </head>
 <body >
     <div class=" container-fluid rules">
-        <p style="font-size:5rem;color:aliceblue; text-align: center;margin-bottom: 0%;">Stranger things</p>
+        <p style="font-size:5rem;color:aliceblue; text-align: center;margin-bottom: 0%;"><?php echo $set ?></p>
         <p style="font-size:3rem;color: aliceblue;text-align: center;margin-bottom: 0%; ">Ready to test your knowledge?</p>
         <div class=" rule-list">
         <ul>

@@ -50,3 +50,25 @@ nav{
     font-size:1.3rem ;
     padding:0 1.5rem;
 }
+
+.profile{
+    margin: auto;
+    margin:17vh 0 0 30vw;
+    
+    border-radius: 10px solid black;
+}
+.profile img{
+    height:18rem;
+    width:17rem;
+    float:left;
+}
+
+.profile li{
+    width:30rem;
+    height:6rem;
+    padding: 2rem;
+    font-size:25px;
+}
+.prf{
+    margin-top:4rem;
+}

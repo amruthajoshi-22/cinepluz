@@ -49,7 +49,7 @@ if(isset($_POST['submit'])) {
 			 $_SESSION['mail']=$row[1];
 			// $_SESSION['email']=$row[2];
 			// $_SESSION['password']=$row[3];
-			 header('location:profile.php?'); 					
+			 header('location:index.html?'); 					
 		}
 
         

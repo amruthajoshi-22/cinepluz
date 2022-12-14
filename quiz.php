@@ -42,10 +42,10 @@
             <a class="nav-link active" href="rank.php">Ranklist</a>
            </li>
            <li class="nav-item">
-            <a class="nav-link active" href="aboutus.html">About</a>
+            <a class="nav-link active" href="aboutus.html">AboutUs</a>
            </li>
            <li class="nav-item">
-            <a class="nav-link active" href="login.php">Signup</a>
+            <a class="nav-link active" href="profile.php">Profile</a>
            </li>
         </ul>
     </div>
@@ -62,9 +62,10 @@
     
     
     <div class="templates" style="display:none;">
-       <li class="quiz_list ql-1" id="" > Level-1</li>
-       <li class="quiz_list ql-1" id="" >Level-2</li>
-       <li class="quiz_list ql-1" id="">Level-3</li>
+       <li class="quiz_list ql-1" ><a id="Bahubali" href="intermediate.php?quizcat=Bahubali"> Bahubali</a></li>
+       <li class="quiz_list ql-1" ><a id="3idiots" href="intermediate.php?quizcat=3idiots">3 idiots</a></li>
+       <!-- <li class="quiz_list ql-1" ><a id="">Level-3<</a></li> -->
+       
        
     </div>
   </div>
@@ -74,20 +75,15 @@
           <button type="button" class="btn btn-lg" id="btn-holly" onclick="template(this)">Click Here</button>
         </div>
         <div class="templates" style="display:none;">
-          <li class="quiz_list ql-2" id=""> Level-1</li>
-          <li class="quiz_list ql-2" id="">Level-2</li>
-          <li class="quiz_list ql-2" id="">Level-3</li>
+          <li class="quiz_list ql-2"><a id="Titanic" href="intermediate.php?quizcat=thetitanic"> Titanic</a></li>
+          <li class="quiz_list ql-2"><a id="Spiderman" href="intermediate.php?quizcat=spiderman">Spiderman</a></li>
+          <!-- <li class="quiz_list ql-2"><a id="" href="intermediate.php?quizcat=moneyheist">Level-3</a></li> -->
           
        </div>
       <div class="boxwood" id="holly">
         <p class="type_head">Hollywood Movies</p>
         <img class="type_image"  src="https://i1.wp.com/www.moviescut.com/wp-content/uploads/2012/12/10-Best-Hollywood-Movie-of-2012.jpg?fit=1024%2C576&ssl=1&resize=1280%2C720" alt="" srcset="">
-      </div>
-
-      
-    
-    
-    
+      </div>  
   </div>
       <div class="container-fluid quiz_type-1">
       <div class="boxwood"id="h-series">
@@ -101,9 +97,9 @@
     
     
     <div class="templates" style="display:none;">
-       <li class="quiz_list ql-3" id="family-man"> Level-1</li>
-       <li class="quiz_list ql-3" id="Sacred Games">Level-2</li>
-       <li class="quiz_list ql-3" id="Mismatched">Level-3</li>
+       <!-- <li class="quiz_list ql-3" id="family-man" href="intermediate.php?quizcat=familyman">Family-man</li> -->
+       <li class="quiz_list ql-3"><a id="Sacred Games" href="intermediate.php?quizcat=sacredgames">Sacred Games</a></li>
+       <li class="quiz_list ql-3"><a id="Paatallok" href="intermediate.php?quizcat=paatallok">Paatallok</a></li>
       
     </div>
   </div>
@@ -115,7 +111,7 @@
         <div class="templates" style="display:none;">
           <li class="quiz_list ql-4"><a  id="moneyheist" href="intermediate.php?quizcat=moneyheist"> Money heist</a></li>
           <li class="quiz_list ql-4" ><a  id="strangerthings" href="intermediate.php?quizcat=strangerthings">Stranger Things</a></li>
-          <li class="quiz_list ql-4" ><a  id="friends" href="intermediate.php?quizcat=friends">Level-5</a></li>
+          <!-- <li class="quiz_list ql-4" ><a  id="friends" href="intermediate.php?quizcat=friends">Level-5</a></li> -->
          
        </div>
       <div class="boxwood" id="e-series">
